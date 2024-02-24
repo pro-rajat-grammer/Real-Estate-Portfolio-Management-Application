@@ -7,5 +7,4 @@ const userSchema = new mongoose.Schema({
     password:"string"
 })
 
-
 module.exports=mongoose.model("users",userSchema)
