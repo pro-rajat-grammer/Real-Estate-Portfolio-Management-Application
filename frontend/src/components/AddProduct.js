@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom"
 
 const AddProduct = () => {
-
     const [name, setName] = useState('')
     const [desc, setDesc] = useState('')
     const [manager, setManager] = useState('')
@@ -13,8 +12,7 @@ const AddProduct = () => {
     const [error, setError] = useState(false)
 
     const onClick = async () => {
-        console.log(name, desc, manager);
-
+        // console.log(name, desc, manager);
         if (!name || !desc || !manager || !img) {
             setError(true)
             return false;
@@ -33,7 +31,6 @@ const AddProduct = () => {
         console.log(result);
         navigate('/')
     }
-
 
     return (
         <div className='addproducts' >
