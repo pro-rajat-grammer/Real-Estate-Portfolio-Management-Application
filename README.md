@@ -29,7 +29,7 @@ The Real Estate Portfolio Management Application is a web application built usin
   - Chart.js or Victory for data visualization
 
 ## Setup Instructions
-1. Clone the repository: `git clone <repository_URL>`
+1. Clone the repository: `git clone https://github.com/pro-rajat-grammer/Real-Estate-Portfolio-Management-Application.git`
 2. Navigate to the project directory: `cd real-estate-portfolio-management`
 3. Install backend dependencies: `cd backend && npm install`
 4. Install frontend dependencies: `cd .. && cd frontend && npm install`
@@ -39,11 +39,8 @@ The Real Estate Portfolio Management Application is a web application built usin
 
 ## Usage
 1. Log in to the application using your administrator credentials.
-2. Navigate through different sections such as properties, portfolios, tenants, and finances.
+2. Navigate through different sections such as properties.
 3. Add, edit, or delete properties and portfolios as needed.
-4. Manage tenant information, leases, and rental payments.
-5. Generate financial reports and analyze property performance.
-6. Upload and manage property-related documents securely.
 7. Ensure to log out securely after managing the portfolio.
 
 ## Contributing
