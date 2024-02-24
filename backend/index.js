@@ -4,10 +4,8 @@ require("./db/config");
 const User = require("./db/users")
 const Product = require("./db/products")
 const cors = require("cors")
-
 const Jwt = require("jsonwebtoken");
 const jwtKey = "realestate";
-
 const app = express();
 
 app.use(express.json());
@@ -20,7 +18,6 @@ app.post("/register", async (req, resp) => {
         if (err) {
             resp.send({ result: "no user found token code err" })
         } else {
-
             resp.send({ result, auth: token });
         }
     })
@@ -28,17 +25,14 @@ app.post("/register", async (req, resp) => {
 
 app.post("/login", async (req, resp) => {
     let user = await User.findOne(req.body).select("-password");
-
     if (req.body.email && req.body.password) {
         if (user) {
             Jwt.sign({ user }, jwtKey, { expiresIn: "2h" }, (err, token) => {
                 if (err) {
                     resp.send({ result: "no user found token code err" })
                 } else {
-
                     resp.send({ user, auth: token });
                 }
-
             })
         } else {
             resp.send({ result: "no match login result found" })
@@ -56,7 +50,6 @@ app.post("/addproduct",verifyToken, async (req, resp) => {
 
 app.get("/products",verifyToken, async (req, resp) => {
     let products = await Product.find();
-
     if (products.length > 0) {
         resp.send(products)
     } else {
