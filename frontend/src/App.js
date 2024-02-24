@@ -12,29 +12,22 @@ import Profile from './components/Profile';
 
 
 function App() {
-
-  
   return (
     <div className="App">
-
       <BrowserRouter>
-      
         <Routes>
-
-          <Route element={ <PrivateComponent/>} >  
-          <Route path="/" element={<ProductList/>}/>
-            <Route path="/add" element={<AddProduct />} />
-            <Route path="/update/:id" element={<Update />} />
-            <Route path="/profile" element={<Profile />} />
-            
-          </Route>
+            <Route element={ <PrivateComponent/>} >  
+                  <Route path="/" element={<ProductList/>}/>
+                    <Route path="/add" element={<AddProduct />} />
+                    <Route path="/update/:id" element={<Update />} />
+                    <Route path="/profile" element={<Profile />} />
+             </Route>
 
           <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login/>} />
+          <Route path="/login" element={<Login/>} />  
         </Routes>
         <Nav />
       </BrowserRouter>
-
     </div>
   );
 }
