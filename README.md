@@ -16,17 +16,41 @@ The Real Estate Portfolio Management Application is a web application built usin
 
 ## Dependencies
 - **Backend**:
-  - Express.js
-  - Mongoose (MongoDB ODM)
-  - JSON Web Tokens (JWT) for authentication
-  - bcryptjs for password hashing
-  - Multer for file uploads
+ {
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3"
+  }
+}
+
 
 - **Frontend**:
-  - React Router for routing
-  - Axios for making HTTP requests to backend APIs
-  - Material-UI or Bootstrap for UI components and styling
-  - Chart.js or Victory for data visualization
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  }
 
 ## Setup Instructions
 1. Clone the repository: `git clone https://github.com/pro-rajat-grammer/Real-Estate-Portfolio-Management-Application.git`
