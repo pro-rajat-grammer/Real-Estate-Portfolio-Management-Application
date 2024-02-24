@@ -56,7 +56,7 @@ The E-commerce Dashboard Application is a web application built using MongoDB, N
 
 
 ## Setup Instructions
-1. Clone the repository: `git clone <repository_URL>`
+1. Clone the repository: `git clone github.com/pro-rajat-grammer/E-commerce-dashboard`
 2. Navigate to the project directory: `cd e-commerce-dashboard`
 3. Install backend dependencies: `cd backend && npm install`
 4. Install frontend dependencies: `cd .. && cd frontend && npm install`
